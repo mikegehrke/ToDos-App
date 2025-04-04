@@ -72,7 +72,7 @@ app/
 Getting Started
 	1.	Clone the repository
 
-git clone https://github.com/mikegehrke/TaskManager.git
+git clone [(https://github.com/mikegehrke/ToDos-App)]
 
 
 	2.	Open in Android Studio
