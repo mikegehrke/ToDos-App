@@ -1,45 +1,49 @@
-TaskManager – Deine smarte ToDo- & Notiz-App
 
-Entwickelt mit Kotlin + Jetpack Compose + Room
+⸻
 
-Über das Projekt
+TaskManager – Your smart multi-user ToDo & Notes App
 
-TaskManager ist eine produktive, leicht erweiterbare ToDo-App mit Mehrbenutzerverwaltung und sauberem Datenmodell.
-Jede Notiz gehört zu einem Benutzer – alle Aufgaben sind somit personalisiert.
-Zudem bietet die App Live-Filter, Status-Tracking, eine moderne UI und ein cleveres User-BottomSheet.
+Built with Kotlin + Jetpack Compose + Room
 
-GitHub-Profil des Entwicklers:
+About the project
+
+TaskManager is a lightweight yet powerful productivity app that supports multiple users, allowing everyone to manage their personal notes and tasks.
+Each note is assigned to a user, and all data is stored locally using Room with a one-to-many relationship.
+
+Built with Clean Architecture, modern Jetpack Compose UI, and StateFlow for a reactive experience.
+
+Developer GitHub Profile:
 github.com/mikegehrke
 
 ⸻
 
 Features
-	•	✅ Mehrere Benutzer verwalten – Nutzer erstellen, auswählen, löschen
-	•	✅ Notizen verwalten – Erstellen, bearbeiten, löschen, als „erledigt“ markieren
-	•	✅ One-to-Many – Jede Notiz gehört einem Benutzer (via userId)
-	•	✅ Realtime-Flow – Alle Änderungen sind reaktiv via StateFlow
-	•	✅ UI mit Compose – inklusive BottomSheet, Dropdowns, FAB-Menüs, Toggles
-	•	✅ Navigation – mit @Serializable-Routen & NavHost
-	•	✅ AppStart-Zähler & Username-Dialog – als Mini-Dashboard
+	•	✅ Multi-user support – Create, select, and delete users
+	•	✅ Note management – Add, edit, delete, and mark notes as done
+	•	✅ One-to-many database – Each note is linked to a user
+	•	✅ Reactive Flow – Instant updates via StateFlow
+	•	✅ Modern UI – Compose layout with BottomSheet, Dropdowns, FABs
+	•	✅ Clean Navigation – With @Serializable routes and NavHost
+	•	✅ AppStart counter & Username dialog – Productivity tracking built-in
 
 ⸻
 
 Tech Stack
 
-Layer	Technologie
-Sprache	Kotlin
+Layer	Technology
+Language	Kotlin
 UI	Jetpack Compose
-DB	Room (One-to-Many)
-Architektur	MVVM + Flow
-DI	Hilt (optional einsetzbar)
-Navigation	@Serializable-Routen
-State Mgmt	StateFlow / collectAsState
+Database	Room (One-to-many support)
+Architecture	MVVM + Clean Architecture
+State	StateFlow + Live Recomposition
+Navigation	Kotlinx Serialization (@Serializable)
+Optional	Hilt for DI
 
 
 
 ⸻
 
-Projektstruktur
+Project Structure
 
 app/
 ├── data/
@@ -58,52 +62,53 @@ app/
 │   │   └── NoteDetailsScreen.kt
 │   └── components/
 ├── navigation/
-│   └── AppStart.kt (NavHost)
+│   └── AppStart.kt
 └── MainActivity.kt
 
 
 
 ⸻
 
-Installation & Ausführung
-	1.	Clone das Repo
+Getting Started
+	1.	Clone the repository
 
 git clone https://github.com/mikegehrke/TaskManager.git
 
 
-	2.	Öffne es in Android Studio
-	3.	Starte die App
-	•	Emulator oder echtes Gerät wählen
-	•	App ausführen – fertig!
+	2.	Open in Android Studio
+	3.	Build & run the app
+Use an emulator or physical device.
 
 ⸻
 
-Screenshots / Vorschau
+Demo / Screenshots
 
-(Hier kannst du echte Screenshots einfügen – oder schick sie mir, ich bau sie ein!)
-
-⸻
-
-Nützlich für Bewerbungen
-
-Diese App zeigt:
-	•	Dein Verständnis von Room + Jetpack Compose
-	•	Umgang mit Mehrbenutzer-Systemen
-	•	Anwendung von StateFlow & MVVM
-	•	UI-Konzepte mit Material 3 & Compose Components
-	•	Navigation per Serializable-Routen (ideal für Prüfungen & Tests)
-	•	Gute Clean Architecture
+(Insert screenshots or app preview GIF here. Let me know if you want help creating one!)
 
 ⸻
 
-Mitwirken & Lizenz
+Why it’s great for your portfolio
 
-Pull Requests willkommen!
-Dieses Projekt ist unter der MIT License lizenziert.
+This app demonstrates:
+	•	Full Room DB integration with custom relationships
+	•	Clean MVVM architecture and StateFlow usage
+	•	Reusable Compose components with Material 3
+	•	Typed and safe navigation via Kotlinx Serialization
+	•	Real-world use cases: users, notes, filters, bottom sheets, and dialogs
+
+Perfect to showcase your Android skills on your GitHub profile!
 
 ⸻
 
-Entwickelt von mikegehrke
-Powered by Kotlin + Compose + Flow
+License
+
+This project is licensed under the MIT License.
+Feel free to fork, contribute, or use it as a base for your own project.
 
 ⸻
+
+Created by mikegehrke
+Powered by Kotlin, Compose, Flow & Room
+
+⸻
+
